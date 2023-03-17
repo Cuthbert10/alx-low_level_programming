@@ -5,13 +5,14 @@
  */
 int main(void)
 {
-	int n = 122;
+	char alpha = 'z';
 
-	while (n >= 97)
+	while (alpha >= 'a')
 	{
-		putchar(n0;
-		n--;
+		putchar(alpha);
+		alpha--;
 	}
 	putchar('\n');
+
 	return (0);
 }
