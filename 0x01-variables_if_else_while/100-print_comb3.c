@@ -4,7 +4,7 @@
  *main - Entry point, print 00 to 99 using putchar
  *Return: Always 0 (Success)
  */
- int main(void)
+int main(void)
 {
 	int n, m;
 
