@@ -4,26 +4,26 @@
  *main - Entry point, print 00 to 99 using putchar
  *Return: Always 0 (Success)
  */
-
-int main(void)
+ int main(void)
 {
-	int tens;
-	int ones;
+	int n, m;
 
-	for (tens = '0'; tens <= '9'; tens++) /*print tens place*/
+	for (n = 48; n <= 56; n++)
 	{
-		for (ones = '0'; ones <= '9'; ones++) /*print ones place*/
+		for (m = 49; m <= 57; m++)
 		{
-			putchar(tens);
-			putchar(ones);
-			if (!(tens == '9' && ones == '9')) /*skip comma at end*/
+			if (m > n)
 			{
-				putchar(',');
-				putchar(' ');
+				putchar(n);
+				putchar(m);
+				if (n != 56 || m != 57)
+				{
+					putchar(',');
+					putchar(' ');
+				}
 			}
 		}
 	}
 	putchar('\n');
-
 	return (0);
 }
