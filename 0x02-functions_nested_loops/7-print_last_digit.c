@@ -4,13 +4,20 @@
  * @n: integer extractor
  * Return: the last value of digit
  */
-int print_last_digit(int n);
+int print_last_digit(int n)
 {
+	int a;
+
 	if (n < 0)
+	n = -n;
 
-		n *= -1;
+	a = n % 10;
 
-	_putchar('0' + (n % 10));
+	if (a < 0)
+		a = -a;
 
-	return (n % 10);
+	_putchar(a + '0');
+
+	return (a);
+
 }
