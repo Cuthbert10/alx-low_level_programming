@@ -4,11 +4,13 @@
  * @c: integer
  * Return: the last value of digit
  */
-int print_last_digit(int c);
+int print_last_digit(int n);
 {
-	if (c < 0)
-		c *= -1;
+	if (n < 0)
+
+		n *= -1;
+
 	_putchar('0' + (c % 10));
 
-	return (c % 10);
+	return (n % 10);
 }
