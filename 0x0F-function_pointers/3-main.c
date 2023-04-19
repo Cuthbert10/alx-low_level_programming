@@ -17,10 +17,10 @@ int main(int argc, char *argv[])
 	int n1, n2;
 	int (*f)(int, int);
 
-	
+
 	if (argc != 4)
 	{
-		printf("Error\n");
+	printf("Error\n");
 		exit(98);
 	}
 
@@ -40,7 +40,7 @@ int main(int argc, char *argv[])
 		exit(100);
 	}
 
-	printf("%d\n", f(n1, n2)); 
+printf("%d\n", f(n1, n2));
 
 	return (0);
 }
