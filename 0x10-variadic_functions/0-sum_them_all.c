@@ -11,13 +11,14 @@ unsigned int i;
 va_start(arguments, n);
 
 /* Add up all the arguments */
-for (i = 0; i < n; i++) {
+for (i = 0; i < n; i++) 
+{
 sum += va_arg(arguments, int);
 }
 
 /* Clean up the arguments list */
 va_end(arguments);
 
-return sum;
+return (sum);
 }
 
