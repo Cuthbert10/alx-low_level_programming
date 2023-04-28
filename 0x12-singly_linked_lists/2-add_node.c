@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * _strlen - Finds string lengths.
+ * _strlen - Finds the string lengths.
  * @str: String
  * Return: Length
  */
@@ -15,10 +15,10 @@ int _strlen(const char *str)
 }
 
 /**
- * add_node - Adds node to the beginning of the linked list.
+ * add_node - Adds node at the start of the linked list.
  * @head: Linked list
  * @str: Data for the new node.
- * Return: Address of the new element or NULL if failed.
+ * Return: Address of the new element or NULL  if the creation process fails.
  */
 
 list_t *add_node(list_t **head, const char *str)

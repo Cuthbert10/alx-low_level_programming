@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * _strlen - Finds String Length.
+ * _strlen - Finds the Length of string.
  * @str: String
  * Return: Length
  */
@@ -20,34 +20,32 @@ int _strlen(const char *str)
 }
 
 /**
- * add_node_end - Adds node to the end of the linked list.
+ * add_node_end - Adds a node to the end of the linked list.
  * @head: Linked list
  * @str: Data for the new node.
- * Return: Address of the new element or NULL if failed.
+ * Return: Address of the new element or NULL if the creation process fails.
  */
 
 list_t *add_node_end(list_t **head, const char *str)
 
-
 {
-
 
 	list_t *new_node, *tmp;
 
 	if (str == NULL)
 
-		return (NULL);
+	return (NULL);
 
 	if (strdup(str) == NULL)
 
-		return (NULL);
+	return (NULL);
 
 	new_node = malloc(sizeof(list_t));
 
 
 	if (new_node == NULL)
 
-		return (NULL);
+	return (NULL);
 
 	new_node->str = strdup(str);
 
@@ -57,17 +55,17 @@ list_t *add_node_end(list_t **head, const char *str)
 
 	if (*head == NULL)
 
-		*head = new_node;
+	*head = new_node;
 
 	else
 
 	{
-		tmp = *head;
+	tmp = *head;
 
-		while (tmp->next != NULL)
+	while (tmp->next != NULL)
 
-			tmp = tmp->next;
-		tmp->next = new_node;
+	tmp = tmp->next;
+	tmp->next = new_node;
 	}
 	return (new_node);
 }
