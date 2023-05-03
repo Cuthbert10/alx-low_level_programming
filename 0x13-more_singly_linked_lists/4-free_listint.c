@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * free_listint - this frees the linked list.
+ * free_listint - frees the linked list.
  * @head: Linked list.
  */
 
@@ -12,7 +12,7 @@ listint_t *ptr;
 	if (head == NULL)
 		return;
 
-	while (head != NULL)
+while (head != NULL)
 {
 ptr = head;
 		head = head->next;

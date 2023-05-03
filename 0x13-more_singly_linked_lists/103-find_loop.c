@@ -17,10 +17,10 @@ listint_t *find_listint_loop(listint_t *head)
 	turtle = turtle->next;
 		hare = hare->next->next;
 
-		if (turtle == hare)
+	if (turtle == hare)
 		{
 	turtle = head;
-			while (turtle != hare)
+	while (turtle != hare)
 			{
 	turtle = turtle->next;
 		hare = hare->next;

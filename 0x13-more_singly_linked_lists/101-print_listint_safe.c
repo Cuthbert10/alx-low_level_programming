@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * count_nodes_till_loop - counts the number nodes to know now many special nodes to print.
+ * count_nodes_till_loop - counts nodes to know how many special nodes to print
  * @head: Pointer to the head pointer of the linked list.
  * Return: amount of special nodes in the list before loop.
  */
@@ -11,8 +11,7 @@ int count_nodes_till_loop(const listint_t *head)
 	const listint_t *turtle, *hare;
 
 turtle = hare = head;
-
-	while (turtle != NULL && hare != NULL)
+while (turtle != NULL && hare != NULL)
 	{
 turtle = turtle->next;
 	hare = hare->next->next;
@@ -21,12 +20,12 @@ turtle = turtle->next;
 		if (turtle == hare)
 		{
 		turtle = head;
-			while (turtle != hare)
-			{
+		while (turtle != hare)
+		{
 		turtle = turtle->next;
 			hare = hare->next;
 				count++;
-			}
+		}
 			return (count);
 		}
 	}

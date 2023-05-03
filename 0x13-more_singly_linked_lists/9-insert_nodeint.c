@@ -29,7 +29,7 @@ new_node = malloc(sizeof(listint_t));
 	}
 
 	tmp = *head;
-	while (i < (idx - 1))
+while (i < (idx - 1))
 {
 tmp = tmp->next;
 		i++;
